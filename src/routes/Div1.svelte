@@ -2,6 +2,7 @@
 <!-- Div1.svelte -->
 
 <script>
+  import {marked} from 'marked';
   import  sanitizeHtml from 'sanitize-html'; 
   import katex from 'katex';
   let textContent = "## Horizontal Rule\n---\n\n## Text\nThis is **bold** text.\n\nThis is _italic_ text.\n\nThis is ~~strikethrough~~ text.\n\n## Blockquote\n> This is a blockquote.\n\n## Code\n### Inline Code\n`inline code`\n\n### Code Blocks\n```python\ndef example():\n    print(\"Hello, Markdown!\")\n```\n\n## Emphasis\n*italic* or _italic_\n**bold** or __bold__\n\n## Lists\n### Unordered List\n- Item 1\n- Item 2\n  - Subitem 1\n  - Subitem 2\n\n### Ordered List\n1. Item 1\n2. Item 2\n   1. Subitem 1\n   2. Subitem 2\n\n";
